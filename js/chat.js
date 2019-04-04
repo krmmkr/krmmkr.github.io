@@ -28,6 +28,9 @@ var bye = ['Thank you. Have a good day', 'Thank you. It was great talking to you
   case 'general_ask':
      var disp = 'I am doing good. Thanks for asking'
     break;
+  case 'what':
+     var disp = 'I am looking for a job'
+    break;
    case 'affirm':
      var disp = 'Great!'
     break;             
