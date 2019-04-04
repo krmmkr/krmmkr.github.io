@@ -1,6 +1,7 @@
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
+       
         <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137378866-1"></script>
     <script>
@@ -30,6 +31,7 @@
 			<!--
 			CSS
 			============================================= -->
+            <link rel="stylesheet" href="css/overlay.css">
 			<link rel="stylesheet" href="css/linearicons.css">
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 			<link rel="stylesheet" href="css/bootstrap.css">
@@ -38,7 +40,20 @@
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<body>
-			<!-- start banner Area -->
+            <!--chat-->
+            <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <h3 class="overlay-title">Welcome</h3>
+<p id="messages" class="overlay-msg"></p>             
+<div id = "textbutton" class="overlay-content">
+<input type="text" id="txtbox" onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('sendbutton').click()" size="50"   >
+<button id="sendbutton" onclick="loadDoc()">send</button>
+    </div>
+</div>
+            <!-- end chat-->
+            
+            <!-- start banner Area -->
 			<section class="banner-area" id="home">
 				<!-- Start Header Area -->
 				<header class="default-header">
@@ -89,7 +104,7 @@
 						<p class="mx-auto text-white  mt-20 mb-40">
                             <b>I am passionate about Data - Analytics, Machine Learning, Computer Vision, Natural Language Processing, Big Data</b> 
 						</p>
-						<!--<a href="#" class="text-uppercase header-btn"><span>Let Us Talk</span></a>-->
+						<a href="#" class="text-uppercase header-btn" onclick="openNav()"><span>Let Us Talk</span></a>
                         <br><br><br><br><br><br>
                         <p class="mx-auto text-white">
                             <b>Connect with me on</b>
@@ -600,5 +615,6 @@ views which can be easily analysed by anyone with least technical skills.
 			<script src="js/jquery.sticky.js"></script>
 
 			<script src="js/main.js"></script>	
+            <script src="js/chat.js"></script>	
 		</body>
 	</html>
