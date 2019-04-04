@@ -3,7 +3,7 @@
         msg_txt.innerHTML = conv;
 var greet = ['Hai', 'Hello', 'Hii', 'Hi'];    
 var bye = ['Thank you. Have a good day', 'Thank you. It was great talking to you', 'Thank you']; 
-        function loadDoc() {
+        function bot() {
   var msg = document.getElementById("txtbox").value
   conv = conv + '<b>You : </b>'+msg + '<br>'
   msg_txt.innerHTML = conv;
@@ -38,6 +38,9 @@ var bye = ['Thank you. Have a good day', 'Thank you. It was great talking to you
       msg_txt.innerHTML = conv;
         msg_txt.scrollTop = msg_txt.scrollHeight;
     }
+      else{
+      msg_txt.innerHTML = "I am sorry. Couldn't connect to Server or Server Unavailable";
+      }
   };
   xhttp.open("GET", url, true);
   xhttp.send();

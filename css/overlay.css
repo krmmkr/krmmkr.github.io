@@ -60,6 +60,13 @@
   font-size: 60px;
 }
 
+#txtbox {
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px; 
+    height: 15px;    
+}
+
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
