@@ -43,7 +43,7 @@
             <!--chat-->
             <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <h3 class="overlay-title">Welcome</h3>
+                <h3 class="overlay-title">Ask about Me</h3>
 <p id="messages" class="overlay-msg"></p>             
 <div id = "textbutton" class="overlay-content">
 <input type="text" id="txtbox" onkeydown = "if (event.keyCode == 13)
@@ -141,7 +141,8 @@
 							<div class="dec">
 								<h4 class="mt-30"><a href="#">Car Brand and Type Classification</a></h4>			
 								<p class="mt-20">
-									&nbsp&nbsp <b>></b> &nbsp Transfer learning using ResNet-152 with convolution only layers. <br>
+                                    &nbsp&nbsp <b>></b> &nbsp Performed Image Augmentation for increased train size and better model performance. <br>
+									&nbsp&nbsp <b>></b> &nbsp Transfer learning using ResNet-152, Removed fully connected layers and added two branches of convolution layers for Multiple classification. <br>
 &nbsp&nbsp <b>></b> &nbsp Multi-Output Classification Car brand [6 classes] and Car type [5 classes] in one model with multiple loss functions.
 								</p>								
 							</div>
@@ -152,7 +153,9 @@
 							<div class="dec">
 								<h4 class="mt-30"><a href="#">Histopathologic Cancer Detection</a></h4>			
 								<p class="mt-20">
-									&nbsp&nbsp <b>></b> &nbsp Implemented a Convolution Neural Network with convolution only layers to detect cancer with 0.95 Area Under Curve
+									&nbsp&nbsp <b>></b> &nbsp Implemented a Convolution Neural Network similiar to LeNet Architecture.<br>
+                                    &nbsp&nbsp <b>></b> &nbsp Used Fully convolution layers - Filters same as Feature map size and the 1x1 Filters for final layer.<br>
+                                    &nbsp&nbsp <b>></b> &nbsp Binary classification - Achieved 0.95 Area Under Curve
 								</p>								
 							</div>
 						</div>
@@ -204,7 +207,7 @@ data and suggested appropriate products to be bundled.<br>
 &nbsp&nbsp <b>></b> &nbsp Performed Chi-Squared test to identify if all seasons perform same or not.<br>
 &nbsp&nbsp <b>></b> &nbsp Paired Sample T-Test to confirm if sales perform better after change in business process.<br>
 &nbsp&nbsp <b>></b> &nbsp Visualized Sales using Bar Plots, for different locations using Heat Maps and then presented all the visualizations in
-tableau dashboard.<br>
+tableau dashboard.
 								</p>								
 							</div>
 						</div>
@@ -217,12 +220,22 @@ tableau dashboard.<br>
 								&nbsp&nbsp <b>></b> &nbsp Performed Text Preprocessing - Tokenized, removed stop words, punctuations.<br>
                                 &nbsp&nbsp <b>></b> &nbsp Ientified percentage of common words, common Named Entities.<br>
                                 &nbsp&nbsp <b>></b> &nbsp Converted text to vector form and computed cosine distance between them [Word2vec].<br>
-                                &nbsp&nbsp <b>></b> &nbsp Used these Features in a classifier to perform binary classification if questions have same intent or not. <br>
+                                &nbsp&nbsp <b>></b> &nbsp Used these Features in a classifier to perform binary classification if questions have same intent or not.
 								</p>								
 							</div>
 						</div>
-                        
-                        
+                        <!-- Project 8 -->
+                        <div class="single-service col-lg-6 col-md-6">
+							<div class="dec">
+								<h4 class="mt-30"><a href="#">Chatbot based on Intent Classification</a></h4>			
+								<p class="mt-20">
+								&nbsp&nbsp <b>></b> &nbsp Performed Intent classification of the entered chat text using Rasa NLU's Spacy - Scikit learn model.<br>
+                                &nbsp&nbsp <b>></b> &nbsp Based on the intent of the entered message, chatbot reply back with prespecified text.<br>
+                                &nbsp&nbsp <b>></b> &nbsp Check out this at the top of the portal.
+								</p>								
+							</div>
+						</div>
+                        <!-- end project 8 -->
 					</div>
 				</div>	
 			</section>
@@ -308,40 +321,7 @@ decisions improving the performance by 8%.<br>
                             <h5 class="skillbar"><b>Databases:</b> SQL Server, MySQL, MongoDB, Cassandra</h5>
                             <h5 class="skillbar"><b>Big Data/Hadoop Ecosystem:</b> PySpark, Impala, Hive</h5>
                             
-				               <!-- <div class="skillbar" data-percent="85%">
-				                    <div class="skill-bar-percent">After Effects 85%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 85%;"></div>
-				                    </div>
-				                </div>
-
-				                <div class="skillbar" data-percent="80%">
-				                    <div class="skill-bar-percent">Photoshop 80%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 80%;"></div>
-									</div>
-				                </div>
-
-				                <div class="skillbar" data-percent="40%">
-				                    <div class="skill-bar-percent">Illustrator 40%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 40%;"></div>
-									</div>
-				                </div>
-
-				                <div class="skillbar" data-percent="70%">
-				                    <div class="skill-bar-percent">Sublime 70%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 70%;"></div>
-									</div>
-				                </div>
-
-				                <div class="skillbar" data-percent="75%">
-				                    <div class="skill-bar-percent">Sketch 75%</div>
-				                    <div class="skillwrap">
-				                    	<div class="skillbar-bar" style="width: 75%;"></div>
-									</div>
-				                </div>		-->		                
+				               <!--skillbar-->         
 						</div>
 						<div class="col-lg-6 about-right justify-content-end d-flex">
 							<div class="myself-wrap">
@@ -358,193 +338,7 @@ decisions improving the performance by 8%.<br>
 					</div>
 				</div>	
 			</section>
-			<!-- End about Area -->
-			
-			
-			<!-- Start project Area --
-			<section class="project-area section-gap" id="project">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Projects</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>	
-                    
-					<div class="row">
-						<div class="col-lg-6 project-left">
-							<div class="single-project pb-100">
-								<!--<img class="img-fluid" src="img/l1.jpg" alt="">--
-								<h4 class="pt-100 pb-30"><a href="#">Car Brand and Type Classification</a></h4>
-								<p>
-								Transfer learning using ResNet-152 with convolution only layers. <br>
-Multi-Output Classification Car brand [6 classes] and Car type [5 classes] in one model with multiple loss functions.<br>
-                                    Transfer learning using ResNet-152 with convolution only layers. <br>
-Multi-Output Classification Car brand [6 classes] and Car type [5 classes] in one model with multiple loss functions.
-								</p>
-							</div>
-                            
-							<div class="single-project">
-								<!--<img class="img-fluid" src="img/l3.jpg" alt="">--
-								<h4 class="pt-100 pb-30"><a href="#">Histopathologic Cancer Detection</a></h4>
-								<p>
-									Implemented a Convolution Neural Network with convolution only layers to detect cancer with 0.95 Area Under Curve<br>
-                                    Implemented a Convolution Neural Network with convolution only layers to detect cancer with 0.95 Area Under Curve<br>
-                                    Implemented a Convolution Neural Network with convolution only layers to detect cancer with 0.95 Area Under Curve
-								</p>
-							</div>							
-						</div>
-                        
-                        
-						<div class="col-lg-6 project-right">
-							<div class="single-project">
-								<h4 class="pt-30 pb-30"><a href="#">Car Brand and Type Classification</a></h4>
-								<p class=" pb-100">
-									Transfer learning using ResNet-152 with convolution only layers. <br>
-Multi-Output Classification Car brand [6 classes] and Car type [5 classes] in one model with multiple loss functions.
-								</p>								
-								<!--<img class="img-fluid" src="img/l2.jpg" alt="">--
-							</div>
-							<div class="single-project">
-								<h4 class="pt-100 pb-30"><a href="#">Panda Illustration</a></h4>
-								<p class=" pb-30">
-									It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological.
-								</p>
-								<!--<img class="img-fluid" src="img/l4.jpg" alt="">--							
-							</div>								
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End project Area -->
-			
-			<!-- Start feature Area --
-			<section class="feature-area pt-100">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Projects</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature mb-30">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-user"></span>
-									<h4><a href="#">Car Brand and Type Classification</a></h4>
-								</div>
-								<p>
-									● Transfer learning using ResNet-152 with convolution only layers. <br>
-● Multi-Output Classification Car brand [6 classes] and Car type [5 classes] in one model with multiple loss functions.<br>
-								</p>							
-							</div>							
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature mb-30">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-license"></span>
-									<h4><a href="#">Histopathologic Cancer Detection</a></h4>
-								</div>
-								<p>
-									● Implemented a Convolution Neural Network with convolution only layers to detect cancer with 0.95 Area Under Curve
-								</p>							
-							</div>							
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature mb-30">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-phone"></span>
-									<h4><a href="#">Students Mark Prediction and Classification - Implementation and Experimentation </a></h4>
-								</div>
-								<p>
-									Linear Regression with gradient descent from scratch to predict the marks of students and experimented with
-various learning rate, convergence threshold etc. [Numpy] <br>
-● Classified students as Pass/Fail using Logistic Regression, Random Forest, Gradient Boosted Trees, Support Vector
-Machines with multiple kernels, kNN, Neural Networks and compared all the results. <br>
-● Performed Classification after Feature Transformation using Principal Component Analysis, Independent
-Component Analysis, Randomized Projections and compared their results.<br>
-● Clustered data using Expectation Maximization, k-Means and used the results as class labels for classification.<br>
-								</p>							
-							</div>							
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-rocket"></span>
-									<h4><a href="#">Retail Store Data modeling, Implementation and Warehousing</a></h4>
-								</div>
-								<p>
-									● Created ER diagrams for retail store and implemented a database based on the ER Diagram.<br>
-● Created Forms and Reports to address standard problem statements using complex Queries.<br>
-● Designed a primary data warehouse using star schema.<br>
-● Performed ETL operation to migrate data from OLTP system to data warehouse, formed OLAP cubes using multiple.<br>
-views which can be easily analysed by anyone with least technical skills.
-								</p>							
-							</div>							
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-diamond"></span>
-									<h4><a href="#">Highly Recomended</a></h4>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>							
-							</div>							
-						</div>
-						<div class="col-lg-4 col-md-6 ">
-							<div class="single-feature">
-								<div class="title d-flex flex-row pb-20">
-									<span class="lnr lnr-bubble"></span>
-									<h4><a href="#">Positive Reviews</a></h4>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-								</p>							
-							</div>							
-						</div>																					
-					</div>
-				</div>	
-			</section>
-			<!-- End feature Area -->
-							
-			<!-- start contact Area --		
-			<section class="contact-area section-gap" id="contact">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-20 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">If you need, Just drop us a line</h1>
-								<p>.</p>
-							</div>
-						</div>
-					</div>										
-					<form class="form-area mt-60" id="myForm" action="mail.php" method="post" class="contact-form text-right">
-						<div class="row">	
-						<div class="col-lg-6 form-group">
-							<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-						
-							<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-
-							<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text">
-						</div>
-						<div class="col-lg-6 form-group">
-							<textarea class="common-textarea mt-10 form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-							<button class="primary-btn mt-20">Send Message<span class="lnr lnr-arrow-right"></span></button>
-							<div class="alert-msg">								
-						</div>
-						</div></div>
-					</form>						
-					
-				</div>	
-			</section>
-			<!-- end contact Area -->		
+			<!-- End about Area -->	
 			
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">
@@ -566,34 +360,7 @@ views which can be easily analysed by anyone with least technical skills.
             		<p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This portal is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
             		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
-					<!--	<div class="col-lg-5  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>Newsletter</h6>
-								<p>Stay update with our latest</p>
-								<div class="" id="mc_embed_signup">
-
-										<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-
-										<div class="d-flex flex-row">
-
-											<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-
-
-				                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-				                            	<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
-				                          	
-											<!-- <div class="col-lg-4 col-md-4">
-												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-											</div>  --
-										</div>		
-										<div class="info"></div>
-										</form>
-								</div>
-								</div>
-						</div>							
-						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+					<!--	<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
 							<div class="single-footer-widget">
 								<h6>Follow Me</h6>
 								<p>Let us be social</p>

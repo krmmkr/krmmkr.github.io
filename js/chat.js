@@ -33,7 +33,16 @@ var bye = ['Thank you. Have a good day', 'Thank you. It was great talking to you
     break;
    case 'affirm':
      var disp = 'Great!'
-    break;             
+    break;   
+  case 'hobbies':
+     var disp = 'I play dota'
+    break;
+   case 'name':
+     var disp = 'I am kohul raj. You can ask me to introduce myself to know more about me'
+    break;
+   case 'contact':
+     var disp = 'My mail id is'
+    break;
   default:
      var disp = 'I am sorry i couldnt answer that. I am still learning'
 }
