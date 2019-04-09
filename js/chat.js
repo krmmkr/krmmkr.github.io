@@ -1,12 +1,12 @@
-        var conv = "Welcome" +'<br>'
+        var conv = ""
         var msg_txt = document.getElementById("messages")
         msg_txt.innerHTML = conv;
-var greet = ['Hai', 'Hello', 'Hii', 'Hi'];    
+var greet = ['Hai', 'Hello', 'Hey, there', 'Hi'];    
 var bye = ['Thank you. Have a good day', 'Thank you. It was great talking to you', 'Thank you']; 
 var hru = ['I am doing good. Thanks for asking', 'I am good. Thanks for asking', 'Good']; 
 var what = ['I am looking for a job']; 
-var name = ['I am kohul raj. You can ask me to introduce myself to know more about me', 'I am Kohul raj.']; 
-var hobbies = ['In my free time i watch movies, play dota, eat, sleep, and do some technological stuffs']; 
+var name = ['I am kohul raj. You can ask me to tell more about myself for a short elevator speech.']; 
+var hobbies = ['In my free time i watch movies, play dota, eat, sleep, and do some technological stuffs', 'I spend time in movies, game - dota 2 and active member of xda community']; 
 var contact = ['My contact info: kohulraj@live.com']; 
 
         function bot() {
@@ -26,7 +26,7 @@ var contact = ['My contact info: kohulraj@live.com'];
     var disp = greet[Math.floor(Math.random() * greet.length)];
     break;
   case 'intro':
-     var disp = 'I am Kohul Raj. <place holder>'
+     var disp = 'I am Kohul Raj. [place holder]'
     break;
   case 'bye':
      var disp = bye[Math.floor(Math.random() * bye.length)];
@@ -57,7 +57,7 @@ var contact = ['My contact info: kohulraj@live.com'];
         msg_txt.scrollTop = msg_txt.scrollHeight;
     }
       else{
-      msg_txt.innerHTML = "I am sorry. Couldn't connect to Server or Server Unavailable <br> Please allow Load blocked Scripts at the top of your browser. It is just a connection to my Google Cloud Platform.";
+      msg_txt.innerHTML = "Please allow Load blocked Scripts at the top of your browser. It is just a connection to my Google Cloud Platform.";
       }
   };
   xhttp.open("GET", url, true);
