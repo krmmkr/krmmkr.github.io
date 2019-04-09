@@ -15,7 +15,7 @@ var contact = ['My contact info: kohulraj@live.com'];
   msg_txt.innerHTML = conv;
   msg_txt.scrollTop = msg_txt.scrollHeight;
   document.getElementById("txtbox").value = ""
-  var url='http://104.196.163.202:5000/parse?q='+msg+'&project=current&model=model1'
+  var url='http://35.233.148.166:5000/parse?q='+msg+'&project=current&model=model1'
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -57,7 +57,7 @@ var contact = ['My contact info: kohulraj@live.com'];
         msg_txt.scrollTop = msg_txt.scrollHeight;
     }
       else{
-      msg_txt.innerHTML = "I am sorry. Couldn't connect to Server or Server Unavailable";
+      msg_txt.innerHTML = "I am sorry. Couldn't connect to Server or Server Unavailable <br> Please allow Load blocked Scripts at the top of your browser. It is just a connection to my Google Cloud Platform.";
       }
   };
   xhttp.open("GET", url, true);
