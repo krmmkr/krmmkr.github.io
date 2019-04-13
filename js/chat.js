@@ -5,9 +5,10 @@ var greet = ['Hai', 'Hello', 'Hey, there', 'Hi'];
 var bye = ['Thank you. Have a good day', 'Thank you. It was great talking to you', 'Thank you']; 
 var hru = ['I am doing good. Thanks for asking', 'I am good. Thanks for asking', 'Good']; 
 var what = ['I am looking for a job']; 
-var myname = ['I am kohul raj. You can ask me to tell more about myself for a short elevator speech.']; 
-var hobbies = ['In my free time i watch movies, play dota, eat, sleep, and do some technological stuffs', 'I spend time in movies, game - dota 2 and active member of xda community']; 
-var contact = ['My contact info: kohulraj@live.com']; 
+var abilities = ['I can solve Analytics, Machine Learning problems']; 
+var myname = ['I am kohul raj. You can ask me to tell more about myself.']; 
+var hobbies = ['In my free time i watch movies, play dota, eat, sleep, and do some tech stuffs', 'I spend time in movies, game - dota 2 and active member of xda community']; 
+var contact = ['My Mail id: kohulraj@live.com and My Mobile No: 2148621016']; 
 
         function bot() {
   var msg = document.getElementById("txtbox").value
@@ -34,6 +35,9 @@ var contact = ['My contact info: kohulraj@live.com'];
   case 'hru':
      var disp = hru[Math.floor(Math.random() * hru.length)];
     break;
+  case 'abilities':
+     var disp = abilities[Math.floor(Math.random() * abilities.length)];
+    break;
   case 'what':
      var disp = what[Math.floor(Math.random() * what.length)];
     break;
@@ -57,7 +61,7 @@ var contact = ['My contact info: kohulraj@live.com'];
         msg_txt.scrollTop = msg_txt.scrollHeight;
     }
       else{
-      msg_txt.innerHTML = "Please allow Load blocked Scripts at the top of your browser. It is just a connection to my Google Cloud Platform.";
+      msg_txt.innerHTML = "Please allow Load blocked Scripts at the top of your browser. It is just a connection to my Google Cloud Instance.<br><br> Since it is a HTTP request from HTTPS site, the connection is blocked by default.";
       }
   };
   xhttp.open("GET", url, true);
