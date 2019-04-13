@@ -6,7 +6,7 @@ var bye = ['Thank you. Have a good day', 'Thank you. It was great talking to you
 var hru = ['I am doing good. Thanks for asking', 'I am good. Thanks for asking', 'Good']; 
 var what = ['I am looking for a job']; 
 var abilities = ['I can solve Analytics, Machine Learning problems']; 
-var myname = ['I am kohul raj. You can ask me to tell more about myself.']; 
+var myname = ['I am kohul raj. You can ask me to tell more about myself for a short elevator speech.']; 
 var hobbies = ['In my free time i watch movies, play dota, eat, sleep, and do some tech stuffs', 'I spend time in movies, game - dota 2 and active member of xda community']; 
 var contact = ['My Mail id: kohulraj@live.com and My Mobile No: 2148621016']; 
 
