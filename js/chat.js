@@ -11,9 +11,8 @@ var hobbies = ['In my free time i watch movies, play dota, eat, sleep, and do so
 var contact = ['My Mail id: kohulraj@live.com and My Mobile No: 2148621016']; 
 
         function bot() {
-  var msg = document.getElementById("txtbox").innerText = (field.value === "") ? "NA" : document.getElementById("txtbox").value 
+  var msg = document.getElementById("txtbox").value 
   
-  if msg != "NA"{
   conv = conv + '<b>You : </b>'+msg + '<br>'
   msg_txt.innerHTML = conv;
   msg_txt.scrollTop = msg_txt.scrollHeight;
@@ -66,10 +65,10 @@ var contact = ['My Mail id: kohulraj@live.com and My Mobile No: 2148621016'];
       msg_txt.innerHTML = "Please allow Load blocked Scripts at the top of your browser. It is just a connection to my Google Cloud Instance.<br><br> Since it is a HTTP request from HTTPS site, the connection is blocked by default.";
       }
   };
+        
   xhttp.open("GET", url, true);
   xhttp.send();
 }
-        }
 
 function openNav() {
   document.getElementById("myNav").style.display = "block";
