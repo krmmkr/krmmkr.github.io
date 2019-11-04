@@ -1,399 +1,68 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-       
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137378866-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-137378866-1');
-    </script>
-
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="colorlib">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Kohul's Portal</title>
-
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
-            <link rel="stylesheet" href="css/overlay.css">
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>
-            <!--chat-->
-            <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <h3 class="overlay-title">Ask about Me</h3>
-<p id="messages" class="overlay-msg"></p>             
-<div id = "textbutton" class="overlay-content">
-<input type="text" id="txtbox" onkeydown = "if (event.keyCode == 13)
-                        document.getElementById('sendbutton').click()" size="50" />
-<button id="sendbutton" onclick="bot()">send</button>
-    </div>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kohul's Portal</title>
+	<style type="text/css">
+		.content {
+			text-align: center;
+			color: white;
+		}
+		body {
+			background-color: #2E5894;
+		}
+		a:link.chat, a:visited.chat {
+		  background-color: #f44336;
+		  color: white;
+		  padding: 14px 25px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+		a:hover.chat, a:active.chat {
+		  background-color: black;
+		}
+		.image {
+			padding-left: 10px;
+		}
+	</style>
+	<link rel="stylesheet" href="css/overlay.css">
+</head>
+<body>
+	 <!--chat-->
+     <div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3 class="overlay-title">Ask about Me</h3>
+		<p id="messages" class="overlay-msg"></p>             
+		<div id = "textbutton" class="overlay-content">
+			<input type="text" id="txtbox" onkeydown = "if (event.keyCode == 13) document.getElementById('sendbutton').click()" size="50" />
+			<button id="sendbutton" onclick="bot()">send</button>
+    	</div>
+	</div>
             <!-- end chat-->
-            
-            <!-- start banner Area -->
-			<section class="banner-area" id="home">
-				<!-- Start Header Area -->
-				<header class="default-header">
-					<nav class="navbar navbar-expand-lg  navbar-light">
-						<div class="container">
-							  <a class="navbar-brand" href="index.html">
-							  	<!--<img src="img/logo.png" alt="">-->
-                                  <h3 style='color:#fff'>My Portal</h3>
-							  </a>
-							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							    <span class="text-white lnr lnr-menu"></span>
-							  </button>
 
-							  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-							    <ul class="navbar-nav">
-									<li><a href="#home">Home</a></li>
-									<li><a href="#projects">Projects</a></li>
-									<li><a href="#Education">Education / Experience</a></li>
-                                    <li><a href="#about">Skills</a></li>
-									<!--<li><a href="#contact">Contact</a></li>-->
-								   <!-- Dropdown -->
-								   <!-- <li class="dropdown">
-								      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-								        Pages
-								      </a>
-								      <div class="dropdown-menu">
-								        <a class="dropdown-item" href="generic.html">Generic</a>
-								        <a class="dropdown-item" href="elements.html">Elements</a>
-								      </div>
-								    </li>-->									
-							    </ul>
-							  </div>						
-						</div>
-					</nav>
-				</header>
-				<!-- End Header Area -->				
-			<div class="container">
-				<div class="row justify-content-start align-items-center">
-					<div class="col-lg-6 col-md-12 no-padding banner-right">
-						<img class="img-fluid" src="img/my-img.png" alt="">
-					</div>						
-					<div class="col-lg-6 col-md-12 banner-left">
-						<h1 class="text-white"><br>
-							Hi, I’m <br>
-							<span>Kohul Raj</span> <br>
-							Passionate about Learning, Technology, Communism.					
-						</h1>
-						<p class="mx-auto text-white  mt-20 mb-40">
-                            <b> 
-Supporter of Open Source - The Communism of knowledge <br><br>
-A Masters Degree holder with strong interest in the field of Analytics, Machine Learning, Computer Vision, Natural Language Processing and Big Data</b> 
-						</p>
-                        <p class="mx-auto text-white">
-                            <b>Get to know more about me</b>
-						</p>
-						<a href="#" class="text-uppercase header-btn" onclick="openNav()"><span>Let's Talk - ChatBot</span></a>
-                        <br><br><br><br>
-                        <p class="mx-auto text-white">
-                            <b>Connect with me on</b>
-						</p>
-                        <a href="http://linkedin.com/in/kohulraj">
-                        <img src="img/ln.png" alt="">
-                        </a>&nbsp&nbsp
-                        <a href="http://github.com/krmmkr">
-                        <img src="img/github.png" alt="">
-                        </a>
-					</div>
-				</div>
-			</div>
-			</section>
-			<!-- End banner Area -->	
-			
-			<!-- Start Project Area -->
-			<section class="service-area section-gap" id="projects"> 
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Have a Look at my Projects</h1>
-								<p>.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-              <!--           Car Brand and Type Classification  --project 1   -->
-						<div class="single-service col-lg-6 col-md-6 mb-30">
-							<div class="dec">
-								<h4 class="mt-30"><a href="https://github.com/krmmkr/Computer-Vision/tree/master/Car%20Classification">Car Brand and Type Classification</a></h4>			
-								<p class="mt-20">
-                                    &nbsp&nbsp <b>></b> &nbsp Performed Image Augmentation for increased train size and better model performance. <br>
-									&nbsp&nbsp <b>></b> &nbsp Transfer learning using ResNet-152 trained on Imagenet, Removed fully connected layers and added two branches of convolution layers for Multiple classification. <br>
-&nbsp&nbsp <b>></b> &nbsp Multi-Output Classification Car brand [6 classes] and Car type [5 classes] in one model with multiple loss functions.
-								</p>								
-							</div>
-						</div>
-                <!--           Car Brand and Type Classification  --project 2   -->
-                        
-						<div class="single-service col-lg-6 col-md-6 mb-30">
-							<div class="dec">
-								<h4 class="mt-30"><a href="https://github.com/krmmkr/Computer-Vision/tree/master/Histopathologic%20cancer%20detection">Histopathologic Cancer Detection</a></h4>			
-								<p class="mt-20">
-									&nbsp&nbsp <b>></b> &nbsp Implemented a Convolution Neural Network similiar to LeNet Architecture.<br>
-                                    &nbsp&nbsp <b>></b> &nbsp Used Fully convolution layers for faster computation.<br>
-                                    &nbsp&nbsp <b>></b> &nbsp Binary classification - Achieved 0.95 Area Under Curve
-								</p>								
-							</div>
-						</div>
-                         <!--           Car Brand and Type Classification  --project 3   -->
-						<div class="single-service col-lg-6 col-md-6">
-							<div class="dec">
-								<h4 class="mt-30"><a href="https://github.com/krmmkr/Machine-Learning">Students Mark Prediction and Classification - Implementation and Experimentation</a></h4>			
-								<p class="mt-20">
-									&nbsp&nbsp <b>></b> &nbsp Linear Regression with gradient descent from scratch to predict the marks of students and experimented with
-various learning rate, convergence threshold etc. [Numpy] <br>
-&nbsp&nbsp <b>></b> &nbsp Classified students as Pass/Fail using Logistic Regression, Random Forest, Gradient Boosted Trees, Support Vector
-Machines with multiple kernels, kNN, Neural Networks and compared all the results. <br>
-&nbsp&nbsp <b>></b> &nbsp Performed Classification after Feature Transformation using Principal Component Analysis, Independent
-Component Analysis, Randomized Projections and compared their results.<br>
-&nbsp&nbsp <b>></b> &nbsp Clustered data using Expectation Maximization, k-Means and used the results as class labels for classification.
-								</p>								
-							</div>
-						</div>
-                         <!--           Car Brand and Type Classification  --project 4   -->
-						<div class="single-service col-lg-6 col-md-6">
-							<div class="dec">
-								<h4 class="mt-30"><a href="#">Retail - Data modeling, Implementation and Warehousing</a></h4>			
-								<p class="mt-20">
-									&nbsp&nbsp <b>></b> &nbsp Created ER diagrams for retail store and implemented a database based on the ER Diagram.<br>
-&nbsp&nbsp <b>></b> &nbsp Created Forms and Reports to address standard problem statements using complex Queries.<br>
-&nbsp&nbsp <b>></b> &nbsp Designed a primary data warehouse using star schema.<br>
-&nbsp&nbsp <b>></b> &nbsp Performed ETL operation to migrate data from OLTP system to data warehouse, formed OLAP cubes using multiple
-views which can be easily analysed by anyone with least technical skills.
-								</p>								
-							</div>
-						</div>	
-                         <!--           Car Brand and Type Classification  --project 5   -->
-                       	<div class="single-service col-lg-6 col-md-6">
-							<div class="dec">
-								<h4 class="mt-30"><a href="#">Sales Analysis and Store Visualization</a></h4>			
-								<p class="mt-20">
-                                  &nbsp&nbsp <b>></b> &nbsp  Performed Market Basket Analysis using Apriori Algorithm to analyze the buying patterns of customers from sales
-data and suggested appropriate products to be bundled.<br>
-&nbsp&nbsp <b>></b> &nbsp Visualized store Locations using web app with map and tables, filters etc. for interactive analysis
-								</p>								
-							</div>
-						</div>	
-                         <!--           Car Brand and Type Classification  --project 6   -->
-                        	<div class="single-service col-lg-6 col-md-6">
-							<div class="dec">
-								<h4 class="mt-30"><a href="#">Customer Segmentation and Catalog Sales Analysis and Visualization</a></h4>			
-								<p class="mt-20">
-									&nbsp&nbsp <b>></b> &nbsp Performed Statistical tests to identify if repeat customers provide more mean revenue than one time customers.<br>
-&nbsp&nbsp <b>></b> &nbsp Performed Chi-Squared test to identify if all seasons perform same or not.<br>
-&nbsp&nbsp <b>></b> &nbsp Paired Sample T-Test to confirm if sales perform better after change in business process.<br>
-&nbsp&nbsp <b>></b> &nbsp Visualized Sales using Bar Plots, for different locations using Heat Maps and then presented all the visualizations in
-tableau dashboard.
-								</p>								
-							</div>
-						</div>
-                        
-                         <!--           Car Brand and Type Classification  --project 7   -->
-                        	<div class="single-service col-lg-6 col-md-6">
-							<div class="dec">
-								<h4 class="mt-30"><a href="#">Quora Identification of Question with same intent</a></h4>			
-								<p class="mt-20">
-								&nbsp&nbsp <b>></b> &nbsp Performed Text Preprocessing - Tokenized, removed stop words, punctuations.<br>
-                                &nbsp&nbsp <b>></b> &nbsp Identified percentage of common words, common Named Entities.<br>
-                                &nbsp&nbsp <b>></b> &nbsp Converted text to vector form and computed cosine distance between them [Word2vec].<br>
-                                &nbsp&nbsp <b>></b> &nbsp Used these Features in a classifier to perform binary classification if questions have same intent or not.
-								</p>								
-							</div>
-						</div>
-                        <!-- Project 8 -->
-                        <div class="single-service col-lg-6 col-md-6">
-							<div class="dec">
-								<h4 class="mt-30"><a href="#">Chatbot based on Intent Classification</a></h4>			
-								<p class="mt-20">
-								&nbsp&nbsp <b>></b> &nbsp Performed Intent classification of the entered chat text using Rasa NLU's Spacy - Scikit learn model.<br>
-                                &nbsp&nbsp <b>></b> &nbsp Based on the intent of the entered message, chatbot reply back with prespecified text.<br>
-                                &nbsp&nbsp <b>></b> &nbsp Check out this at the top of the portal.
-								</p>								
-							</div>
-						</div>
-                        <!-- end project 8 -->
-					</div>
-				</div>	
-			</section>
-			<!-- End Project Area -->
-            
-            <!-- Start qualification Area -->
-			<section class="qualification-area pt-100 pb-80" id="Education">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-20 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">My Education and Experience</h1>
-								<p>.</p>
-							</div>
-						</div>
-					</div>							
-					<div class="row d-flex justify-content-center">
-						<div class="col-lg-6 col-md-6 qty-left">
-                            
-							<div class="single-qly">
-								<h3 class="text-uppercase">Infosys Ltd</h3>
-								<p>July 2014 - June 2017</p>
-								<h4 class="pt-20">Senior System Engineer</h4><!--pb-20-->
-                                </div>	
-								<p>
-&nbsp&nbsp <b>></b> &nbsp Maintained data integrity in OLTP system ensuring efficient data storage and retrieval.<br>
-&nbsp&nbsp <b>></b> &nbsp Performed ETL and migrated data from a traditional database to the ERP system.<br>
-&nbsp&nbsp <b>></b> &nbsp Designed Forms which improved rate of data input by 25% and Reports assisting management to make better
-decisions improving the performance by 8%.<br>
-&nbsp&nbsp <b>></b> &nbsp Assisted in analysis of transactions for patterns, Identification of key KPI’s to access the performance of stores, model development to predict sales and to find their driving factors, and improving them which resulted in 13% increased sales.
-<br>
-								</p>							
-											
-						</div>
-						<div class="col-lg-6 col-md-6 qty-right">
-							<div class="single-qly">
-								<h4 class="pb-20">University of Texas at Dallas</h4>
-								<h5 class="pb-20">Masters in Business Analytics</h4>
-								
-								<p><b>Year</b>: 2017 - 2019</p>								
-								<p><b>Result</b>:  3.97 (Scale of 4.00)</p>	
-                                <p><b>Specilization</b>:  Data Science</p>
-                             </div>
-							
-							<div class="btm-border d-block mx-auto"></div>							
-							<div class="single-qly">
-								<h4 class="pb-20">College of Engineering Guindy, Anna University</h4>	
-								<h5 class="pb-20">Bachelors in GeoInformatics</h4>
-								
-								<p><b>Year</b>: 2010 - 2014</p>								
-								<p><b>Result</b>:  7.42 (Scale of 10.00)</p>	
-                             </div>	
-																			
-						</div>						
-					</div>
-				</div>	
-			</section>
-			<!-- End qualification Area -->
-			
-            
-			
-			<!-- Start about Area -->
-			<section class="about-area section-gap" id="about">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">About My Skills</h1>
-								<p>.</p>
-							</div>
-						</div>
-					</div>					
-					<div class="row">
-						<div class="col-lg-6 about-left">
-							<p>
-								.
-							</p>
-							<h4 class="pb-40">Skills / Tools</h4>
-                            
-                            <h5 class="skillbar"><b>Languages:</b> Python, Java, SQL, Java Script, C, C++, PHP</h5>
-                            <h5 class="skillbar"><b>Deep Learning:</b> Pytorch, Tensorflow [core]</h5>
-                            <h5 class="skillbar"><b>Computer Vision:</b> OpenCV, PIL, SkImage </h5>
-                            <h5 class="skillbar"><b>NLP:</b> NLTK, Spacy </h5>
-                            <h5 class="skillbar"><b>ML/Statistical:</b> Scikit-learn, R, Strata, SAS </h5>
-                            <h5 class="skillbar"><b>Analytics/Visualization:</b> Tableau, SSIS, SSAS, Matplotlib, seaborn</h5>
-                            <h5 class="skillbar"><b>Tools/Packages:</b> SAP, Photoshop, Visio</h5>
-                            <h5 class="skillbar"><b>Databases:</b> SQL Server, MySQL</h5>
-                            <h5 class="skillbar"><b>Distributed Storage/Frameworks:</b> Hadoop, Spark, Hive, Cassandra</h5>
-                            
-				               <!--skillbar-->         
-						</div>
-						<div class="col-lg-6 about-right justify-content-end d-flex">
-							<div class="myself-wrap">
-								<img class="img-fluid" src="img/intro-img.jpg" alt="">
-								<div class="desc">
-									<h4>Kohul Raj</h4>
-									<p class="pb-10">Passionate about Technology</p>
-									<p><span class="lnr lnr-phone"></span> +1 214-862-1016</p>
-									<p><span class="lnr lnr-envelope"></span> kohul1993@gmail.com</p>
-									<!--<a class="mt-30 text-uppercase talk-btn" href="#"><span>Hire Me</span></a>-->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End about Area -->	
-			
-			<!-- start footer Area -->		
-			<footer class="footer-area section-gap">
-				<div class="container">
-					<div class="row">
-						<!--<div class="col-lg-5  col-md-6 col-sm-6">-->
-							<!--<div class="single-footer-widget">-->
-								<h6>About Me</h6>
-								<p>
-									I am Kohul Raj M. From my childhood, I had an passion towards technology and I spend most of the time in that.<br> <br>
-  Since it is a broad area, I decided to narrow down my career focus towards Data, Completing my masters degree in that. I have a strong interest towards Machine Learning, Computer Vision, Natural Language Processing, Distributed Data Processing Systems and would be happy to work on research projects.<br><br>
-  I do spend time in other activities especially in cinema, Online Multiplayer game Dota and politics. 
-								</p>
-                                	<!--</div>-->
-					<!--	</div>-->
-                        </div>
-                    </div>
-                
+	<div class="content">
+		<h2>I am currently Redesigning my Portal</h2>
+		<br><br><br><br>
+		<h3>Meanwhile you can check my personal chatbot built using Machine Learning (NLP) Techniques</h3>
 
-					<!--	<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-							<div class="single-footer-widget">
-								<h6>Follow Me</h6>
-								<p>Let us be social</p>
-								<div class="footer-social d-flex align-items-center">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</div>
-							</div>
-						</div>		-->					
-					
-				
-			</footer>
-                    <div align="center" style="background-color: #222222;">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            		<p class="footer-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This portal is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-            		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>	
-			<!-- End footer Area -->			
+		<a href="#" onclick="openNav()" class="chat"><span>Let's Talk - ChatBot</span></a>
+		<br><br><br><br>
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>
-			<script src="js/parallax.min.js"></script>			
-			<script src="js/owl.carousel.min.js"></script>			
-			<script src="js/jquery.sticky.js"></script>
+		<p>
+			<b>Connect with me on </b>
+		    <a href="http://linkedin.com/in/kohulraj"> 
+		    	<span class="image"></span><img src="img/ln.png" align="middle" alt=""></span>
+		    </a>
+	    </p>
+	    <br><br>
+	    <p>
+			<b>Check out some of my works on </b>
+		    <a href="http://github.com/krmmkr"> 
+		    	<span class="image"> <img src="img/github.png" align="middle" alt=""> </span>
+		    </a>
+		</p>
+	</div>
 
-			<script src="js/main.js"></script>	
-            <script src="js/chat.js"></script>	
-		</body>
-	</html>
+	<script src="js/chat.js"></script>
+</body>
+</html>
