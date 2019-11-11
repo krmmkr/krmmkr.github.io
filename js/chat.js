@@ -62,7 +62,7 @@ var contact = ['My Mail id: kohulraj@live.com and My Mobile No: 2148621016'];
         msg_txt.scrollTop = msg_txt.scrollHeight;
     }
       else{
-      msg_txt.innerHTML = "Please allow Load blocked Scripts at the top of your browser. It is just a connection to my Google Cloud Instance.<br><br> Since it is a HTTP request from HTTPS site, the connection is blocked by default.";
+      msg_txt.innerHTML = "Connecting...";
       }
   };
         
