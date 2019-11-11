@@ -17,7 +17,7 @@ var contact = ['My Mail id: kohulraj@live.com and My Mobile No: 2148621016'];
   msg_txt.innerHTML = conv;
   msg_txt.scrollTop = msg_txt.scrollHeight;
   document.getElementById("txtbox").value = ""
-  var url='https://35.233.148.166:5000/parse?q='+msg
+  var url='https://18491779.ngrok.io/parse?q='+msg
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
