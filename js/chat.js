@@ -4,7 +4,7 @@
 var greet = ['Hai', 'Hello', 'Hey, there', 'Hi'];    
 var bye = ['Thank you. Have a good day', 'Thank you. It was great talking to you', 'Thank you']; 
 var hru = ['I am doing good. Thanks for asking', 'I am good. Thanks for asking', 'Good']; 
-var what = ['I am looking for a job']; 
+var what = ['I am constantly learning']; 
 var abilities = ['I can solve Analytics, Machine Learning problems']; 
 var my_name = ['I am kohul raj. You can ask me to tell more about myself.']; 
 var hobbies = ['In my free time i watch movies, game - dota 2, eat, sleep, and do some tech stuffs', 'I spend time in movies, game - dota 2 and active member of xda community']; 
